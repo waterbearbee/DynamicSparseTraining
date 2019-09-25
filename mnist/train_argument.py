@@ -21,11 +21,7 @@ def parser():
     parser.add_argument('--momentum', type=float, default=0.9, help="SGD momentum(defalt: 0.9)")
     parser.add_argument('--n_eval_step', type=int, default=100, 
         help='number of iteration per one evaluation')
-    parser.add_argument('--n_checkpoint_step', type=int, default=2000, 
-        help='number of iteration to save a checkpoint')
     parser.add_argument('--gpu', '-g', default='0', help='which gpu to use')
-    parser.add_argument('--n_store_image_step', type=int, default=2000, 
-        help='number of iteration to save adversaries')
     parser.add_argument('--seed', default=1, help='The random seed')
     parser.add_argument('--alpha', type=float, default=0.0005, help="Test")
     parser.add_argument('--mask', action='store_true', help='whether to use masked model')
